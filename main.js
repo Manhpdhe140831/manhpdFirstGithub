@@ -11,13 +11,13 @@ step();
 upload();
 function step() {
     myVar = setTimeout(checkTimeOut, 20000);
-    
+
     let num1 = Math.floor(Math.random() * 999);
     let num2 = Math.floor(Math.random() * 999);
-   
+
     let operator = new Array("+", "-", "*");
     const randomOperator = operator[Math.floor(Math.random() * operator.length)];
-    
+
     contentCal.innerHTML = num1 + ' ' + randomOperator + ' ' + num2;
 
     function calculation(a, b, stringData) {
@@ -53,7 +53,7 @@ function checkYes() {
         clearTimeout(myVar);
         upload();
         step();
-        
+
         console.log("dung");
     } else {
         alert("Game over!!! Score: " + score);
@@ -63,7 +63,7 @@ function checkYes() {
         levelText.innerHTML = level;
         upload();
         step();
-        
+
     }
 }
 
@@ -76,7 +76,7 @@ function checkNo() {
         clearTimeout(myVar);
         upload();
         step();
-        
+
         console.log("dung");
     } else {
         alert("Game over!!! Score: " + score);
@@ -86,7 +86,7 @@ function checkNo() {
         levelText.innerHTML = level;
         upload();
         step();
-        
+
     }
 }
 
@@ -100,7 +100,11 @@ function checkTimeOut() {
     step();
 }
 
-function upload(){
+function upload() {
     const progressBar = document.querySelector('.myBar');
-    progressBar.setAttribute('id','play-animation');
+    progressBar.setAttribute('id', 'play-animation');
+}
+
+function update() {
+
 }
