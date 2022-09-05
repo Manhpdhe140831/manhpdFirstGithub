@@ -1,0 +1,125 @@
+.container{
+    width: 1500px;
+    height: 700px;
+    display: flex;
+}
+.__next{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    background-color: bisque;
+    border: 1px solid black;
+}
+.next__banner{
+    width: 300px;
+    height: 15%;
+    margin-top: 0;
+    background-color: beige;
+    text-align: center;
+}
+.next__banner h1{
+    line-height: 70px;
+    margin: auto;
+}
+/* style css for header  */
+.next__header{  
+    width: 300px;
+    height: 15%; 
+    background-color: aqua;   
+}
+.next__header-score {
+ float: left;
+ width: 50%;
+ left: 0;
+
+}
+.next__header-score h3{
+    float: left;
+    margin: auto;
+}
+.next__header-level{
+float: left;
+width: 50%;
+
+}
+.next__header-level h3{
+    float: left;
+    margin: auto;
+}
+.next__header-slider{
+    float: left;
+    padding-top: 5px;
+}
+.next__header-slider input{
+    width: 300px;
+}
+.next__content{
+    width: 300px;
+    height: 70%;
+    
+}
+.next__content-cal{
+    height: 30%;
+    background-color: darkcyan;
+    text-align: center;
+}
+.next__content-cal h1{
+    margin: 0;
+}
+
+.next__content-result{
+    height: 20%;
+    background-color: burlywood;
+    text-align: center;
+}
+.next__content-result h3{
+    margin: 0;
+}
+.next__content-chooser{
+    height: 50%;
+    background-color: cornsilk;
+}
+.next__content-chooser #buttonYes{
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    float: left;
+    margin: 10px 20px;
+    border-color: green;
+}
+
+.next__content-chooser #buttonNo{
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    float: right;
+    margin: 10px 20px;
+    border-color: red;
+}
+.content__chooser-infor h5{
+    margin: 0;
+   
+}
+.myProgress {
+    width: 100%;
+    background-color: #49eded;
+    padding-top: 50px;
+  }
+  
+  .myBar {
+    height: 30px;
+    background-color: red;
+  }
+
+#play-animation{
+    animation: progress-animation 20s forwards;
+}
+
+@keyframes progress-animation {
+    
+    100% {width: 0%}
+    0% {width: 100%;}
+}
+
+
+
